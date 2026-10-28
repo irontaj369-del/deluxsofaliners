@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', Inter, ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream-50: #FBF9F4;
+  --color-cream-100: #F6F2E9;
+  --color-cream-200: #ECE5D5;
+  --color-cream-300: #DCCFB6;
+
+  --color-navy-500: #1F2D4A;
+  --color-navy-600: #172237;
+  --color-navy-700: #101728;
+  --color-navy-800: #0A0F1B;
+
+  --color-charcoal-500: #3A3A3A;
+  --color-charcoal-600: #2A2A2A;
+  --color-charcoal-700: #1C1C1C;
+
+  --color-accent-400: #C89B5A;
+  --color-accent-500: #B8854A;
+  --color-accent-600: #9E6F3C;
+
+  --animate-fade-up: fadeUp 0.7s ease-out both;
+  --animate-fade-in: fadeIn 0.7s ease-out both;
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', Inter, ui-sans-serif, system-ui, sans-serif;
+  background-color: #FBF9F4;
+  color: #1C1C1C;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #1F2D4A;
+  color: #FBF9F4;
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F2E9;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7BCA6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8854A;
+}

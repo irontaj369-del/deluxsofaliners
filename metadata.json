@@ -1,0 +1,6 @@
+{
+  "name": "Delux Sofa Liners",
+  "description": "Custom sofas, expert repair, reupholstery & wall bed panels in Hyderabad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
