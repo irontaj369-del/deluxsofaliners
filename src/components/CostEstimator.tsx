@@ -218,11 +218,11 @@ export default function CostEstimator() {
 
               <a
                 href="#contact"
-                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent-500 hover:bg-accent-600 px-5 py-3.5 text-base font-semibold text-white transition-colors"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent-500 hover:bg-accent-600 px-5 py-3.5 text-xs sm:text-sm md:text-base font-semibold text-white transition-colors text-center"
               >
-                <Sparkles className="h-4 w-4" />
-                Book Free Doorstep Fabric Sample Inspection & Exact Quote
-                <ArrowRight className="h-4 w-4" />
+                <Sparkles className="h-4 w-4 shrink-0" />
+                <span>Book Free Doorstep Inspection &amp; Quote</span>
+                <ArrowRight className="h-4 w-4 shrink-0" />
               </a>
 
               <p className="mt-4 flex items-start gap-2 text-xs text-cream-200/70">

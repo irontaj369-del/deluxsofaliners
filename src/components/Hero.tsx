@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="mt-5 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#1A1A1A] leading-[1.08] text-balance">
+        <h1 className="mt-5 text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-[#1A1A1A] leading-[1.1] text-balance">
           Bespoke Sofas &amp;{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-600 via-accent-500 to-amber-700">
             Luxury Wall Panels
@@ -44,10 +44,10 @@ export default function Hero() {
 
       {/* Bottom CTA Centerpiece */}
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center mt-6 sm:mt-8">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4">
           <Link
             to="/gallery"
-            className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 hover:bg-accent-600 px-8 py-4 text-base font-bold text-white shadow-xl shadow-accent-500/25 transition-all hover:-translate-y-0.5 hover:shadow-accent-500/40"
+            className="group inline-flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-full bg-accent-500 hover:bg-accent-600 px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-white shadow-xl shadow-accent-500/25 transition-all hover:-translate-y-0.5 hover:shadow-accent-500/40"
           >
             <span>Explore Showcase Gallery</span>
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -57,7 +57,7 @@ export default function Hero() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2.5 rounded-full border border-charcoal-600/20 bg-white hover:bg-cream-100 px-7 py-4 text-base font-bold text-[#1A1A1A] shadow-sm transition-all hover:-translate-y-0.5"
+            className="inline-flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-full border border-charcoal-600/20 bg-white hover:bg-cream-100 px-7 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-[#1A1A1A] shadow-sm transition-all hover:-translate-y-0.5"
           >
             <MessageCircle className="h-5 w-5 text-[#25D366] fill-[#25D366]/20" />
             <span>WhatsApp Sofa Photo</span>

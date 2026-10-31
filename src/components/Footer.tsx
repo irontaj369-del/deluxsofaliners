@@ -1,7 +1,9 @@
 import { Sofa, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NAV = [
   { label: 'Home', href: '/' },
+  { label: 'Showcase Gallery', href: '/gallery' },
   { label: 'Custom Sofas', href: '/new-sofas' },
   { label: 'Repair & Restoration', href: '/sofa-repair' },
   { label: 'Wall & Bed Panels', href: '/wall-bed-panels' },
@@ -19,8 +21,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-500 text-white">
+            <Link to="/" className="flex items-center gap-2.5 group w-fit">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-500 text-white shadow-md transition-transform group-hover:scale-105">
                 <Sofa className="h-5 w-5" />
               </span>
               <div className="leading-none">
@@ -29,7 +31,7 @@ export default function Footer() {
                   Basheer Bagh · Hyderabad
                 </p>
               </div>
-            </div>
+            </Link>
             <p className="mt-5 text-sm leading-relaxed text-cream-200/80 max-w-sm">
               Premier sofa repair, custom liners, and re-upholstery in the heart of
               Hyderabad. Bringing old furniture back to life with craftsmanship and care.
@@ -52,14 +54,18 @@ export default function Footer() {
                 <Phone className="h-4.5 w-4.5" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 hover:bg-accent-500 text-cream-200 hover:text-white transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-4.5 w-4.5" />
               </a>
               <a
-                href="#"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 hover:bg-accent-500 text-cream-200 hover:text-white transition-colors"
                 aria-label="Facebook"
               >
@@ -76,12 +82,12 @@ export default function Footer() {
             <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2.5">
               {NAV.map((l) => (
                 <li key={l.href}>
-                  <a
-                    href={l.href}
+                  <Link
+                    to={l.href}
                     className="text-sm text-cream-200/80 hover:text-accent-400 transition-colors"
                   >
                     {l.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -120,12 +126,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
           <p className="text-xs text-cream-200/60">
             © {new Date().getFullYear()} Delux Sofa Liners. All rights reserved.
           </p>
           <p className="text-xs text-cream-200/60">
-            Crafted with care in Hyderabad.
+            Crafted with care in Basheer Bagh, Hyderabad.
           </p>
         </div>
       </div>
